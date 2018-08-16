@@ -89,6 +89,9 @@ Layout Styles
     .pull-right-sm {
       float: right;
     }
+    .not-collapsed {
+      min-height: 1px
+    }
   }
   .col-1-2 {
     width: 50%;
@@ -97,7 +100,7 @@ Layout Styles
     width: 25%;
   }
   .col-1-6 {
-    width: 16,6666667%;
+    width: 16.6666667%;
   }
 }
 
