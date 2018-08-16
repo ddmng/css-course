@@ -205,16 +205,24 @@ Module Styles
   }
 }
 
-@media (min-width: 48em) {
-  .btn-hero {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 1.75em;
-  }
+.btn-hero {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.75em;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  border: solid 1px;
+  font-weight: normal;
 }
 
+.btn-hero:hover {
+  background: white;
+  border-color: white;
+  color: #39b54a;
+}
 
 /*Hero Modules*/
 
@@ -289,16 +297,59 @@ Module Styles
   font-size: 5em;
 }
 
+.bg-image-secondary>img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+}
+
+.bg-image-secondary {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-secondary {
+  background-color: #594a42;
+  /*Orange*/
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-secondary-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 3.75em;
+  position: relative;
+}
+
+.hero-secondary-title i {
+  text-shadow: 0px 0px 8px #000000;
+  opacity: 75%;
+}
+
+.hero-secondary-body {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+  position: relative;
+  font-style: italic;
+}
+
+.hero-secondary.bg-image-secondary>img {
+  opacity: 0.55;
+}
+
 /***************************
 ****************************
 Theme Styles
 ****************************
 ***************************/
-
-.background-primary {
-  background: #F7941E;
-  /*Orange*/
-}
 
 .background-secondary {
   background: #00AEEF;
