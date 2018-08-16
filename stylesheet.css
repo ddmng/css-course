@@ -90,7 +90,10 @@ Layout Styles
       float: right;
     }
     .not-collapsed {
-      min-height: 1px
+      min-height: 1px;
+    }
+    .white-bg {
+      background: white;
     }
   }
   .col-1-2 {
@@ -117,6 +120,175 @@ Module Styles
 ****************************
 ***************************/
 
+/*Button Modules*/
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.313em;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary {
+  background: #8DC63F;
+  border-color: #8DC63F;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: none;
+  border-color: white;
+  text-decoration: none;
+}
+
+.header-primary {
+  background: #9B8579;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+@media (min-width: 48em) {
+  .btn-primary {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.125em;
+  }
+}
+
+.logo {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.logo-primary {
+  width: 64px;
+  height: 64px;
+}
+
+.logo-primary img {
+  height: 100%;
+}
+
+.nav>ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-primary {
+  margin-top: 35px;
+}
+
+.btn-nav {
+  color: white;
+}
+
+@media (min-width: 48em) {
+  .btn-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.125em;
+  }
+}
+
+@media (min-width: 48em) {
+  .btn-hero {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.75em;
+  }
+}
+
+
+/*Hero Modules*/
+
+.hero {
+  text-align: center;
+}
+
+.hero-primary {
+  background-color: #594a42;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.hero-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 2.625em;
+}
+
+.hero-subtitle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 1.500em;
+  font-weight: normal;
+}
+
+.hero-subtitle+button {
+  margin-top: 25px;
+}
+
+/*Background Modules*/
+
+.bg-image {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg-image>img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+}
+
+.hero-primary.bg-image>img {
+  opacity: 0.55;
+}
+
+.hero-body {
+  position: relative;
+}
+
+/*Media Object Module*/
+
+.media,
+.media-body {
+  overflow: hidden;
+}
+
+.media-item {
+  float: left;
+  margin-right: 10px;
+}
+
+.media-item i {
+  color: #594a42;
+  font-size: 5em;
+}
+
 /***************************
 ****************************
 Theme Styles
@@ -138,9 +310,13 @@ Theme Styles
   /*Green*/
 }
 
-.background-footer {
+.background-quaternary {
   background: #594A52;
   color: #9B8579;
+}
+
+.background-quinary {
+  background: #e7e1d7;
 }
 
 /*Color List:
