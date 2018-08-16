@@ -1,0 +1,23 @@
+{
+  "name": "css-course",
+  "version": "1.0.0",
+  "description": "Notes and excercises for advanced css course on edx",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddmng/css-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddmng/css-course/issues"
+  },
+  "homepage": "https://github.com/ddmng/css-course#readme"
+}
