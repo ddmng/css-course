@@ -282,6 +282,19 @@ Module Styles
 
 /*Media Object Module*/
 
+.mediaobject {
+  background: #e7e1d7;
+  padding-bottom: 40px;
+}
+
+.media {
+  padding-top: 40px;
+}
+
+.media-heading {
+  margin-top: 0px;
+}
+
 .media,
 .media-body {
   overflow: hidden;
@@ -295,6 +308,10 @@ Module Styles
 .media-item i {
   color: #594a42;
   font-size: 5em;
+}
+
+.media-body button {
+  margin-top: 24px;
 }
 
 /* Testimonial section Module */
@@ -387,10 +404,6 @@ Theme Styles
 .background-quaternary {
   background: #594A52;
   color: #9B8579;
-}
-
-.background-quinary {
-  background: #e7e1d7;
 }
 
 /*Color List:
