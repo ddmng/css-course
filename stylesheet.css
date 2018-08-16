@@ -297,6 +297,8 @@ Module Styles
   font-size: 5em;
 }
 
+/* Testimonial section Module */
+
 .bg-image-secondary>img {
   position: absolute;
   top: -9999px;
@@ -315,15 +317,25 @@ Module Styles
 
 .hero-secondary {
   background-color: #594a42;
-  /*Orange*/
   color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+}
+
+@media (min-width: 48em) {
+  .hero-secondary {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 48em) {
+  .hero-secondary {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .hero-secondary-title {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 0px;
   font-size: 3.75em;
   position: relative;
 }
@@ -334,11 +346,22 @@ Module Styles
 }
 
 .hero-secondary-body {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   font-size: 1.5em;
   position: relative;
   font-style: italic;
+}
+
+@media (max-width: 48em) {
+  .hero-secondary-body {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 48em) {
+  .hero-secondary-body {
+    margin-top: 60px;
+  }
 }
 
 .hero-secondary.bg-image-secondary>img {
