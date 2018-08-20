@@ -1,4 +1,5 @@
 /* 768px / 16px = 48em */
+/* 992px / 16px = 62em */
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -431,7 +432,7 @@ Layout Styles
   padding-left: 15px;
   padding-right: 15px; }
 
-@media (min-width: 48em) {
+@media only screen and (min-width: 48em) {
   [class*='col-'] {
     float: left; }
   /* Column Two Thirds */
@@ -450,7 +451,7 @@ Layout Styles
   .col-1-12 {
     width: 8.33333%; } }
 
-@media (min-width: 48em) {
+@media only screen and (min-width: 48em) {
   .pull-right-sm {
     float: right; } }
 
@@ -582,7 +583,8 @@ Logo Modules
 /***************************
 Media Modules
 ***************************/
-.media, .media-body {
+.media,
+.media-body {
   overflow: hidden; }
 
 .media-item {
@@ -667,3 +669,51 @@ Theme Styles
 .mask-primary:before {
   background: #F7941E;
   opacity: 0.6; }
+
+/***************************
+Featured Modules
+***************************/
+.featured-body {
+  overflow: hidden;
+  margin: 20px; }
+  .featured-body h3 {
+    font-size: 1.75em;
+    margin: 0px; }
+  .featured-body p {
+    font-size: 1, 125em; }
+
+.featured-item {
+  position: absolute;
+  padding: 10px 35px 10px 10px;
+  vertical-align: middle;
+  font-size: 1.3125em;
+  text-decoration: none;
+  color: white; }
+
+.green {
+  background: #8DC63F; }
+
+.orange {
+  background: #F7941E; }
+
+.brown {
+  background: #594a42; }
+
+.featured-media {
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 200px; }
+
+.featured-media > img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  z-index: -99; }
+
+.tag {
+  width: 100%;
+  min-height: 4px; }

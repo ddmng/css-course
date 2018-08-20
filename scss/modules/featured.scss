@@ -1,0 +1,57 @@
+/***************************
+Featured Modules
+***************************/
+
+.featured-body {
+  overflow: hidden;
+  margin: 20px;
+  h3 {
+    font-size: 1.75em;
+    margin: 0px;
+  }
+  p {
+    font-size: 1, 125em;
+  }
+}
+
+.featured-item {
+  position: absolute;
+  padding: 10px 35px 10px 10px;
+  vertical-align: middle;
+  font-size: 1.3125em;
+  text-decoration: none;
+  color: white;
+}
+.green {
+  background: $green;
+}
+
+.orange {
+  background: $orange;
+}
+
+.brown {
+  background: $brown;
+}
+
+.featured-media {
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+
+.featured-media>img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  z-index: -99;
+}
+
+.tag {
+  width: 100%;
+  min-height: 4px;
+}
