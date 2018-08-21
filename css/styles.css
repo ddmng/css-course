@@ -460,6 +460,71 @@ Layout Styles
     padding-left: 0px;
     padding-right: 0px; } }
 
+/* Flexbox Layout*/
+@media only screen and (min-width: 48em) {
+  .flexbox-sm {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* Column Third */
+    /* Column Half */ }
+    .flexbox-sm [class*='col-'] {
+      float: none; }
+    .flexbox-sm .col-2-3 {
+      -webkit-box-flex: 0 1 66.6666%;
+      -moz-box-flex: 0 1 66.6666%;
+      -webkit-flex: 0 1 66.6666%;
+      -ms-flex: 0 1 66.6666%;
+      flex: 0 1 66.6666%; }
+    .flexbox-sm .col-1-3 {
+      -webkit-box-flex: 0 1 33.3333%;
+      -moz-box-flex: 0 1 33.3333%;
+      -webkit-flex: 0 1 33.3333%;
+      -ms-flex: 0 1 33.3333%;
+      flex: 0 1 33.3333%; }
+    .flexbox-sm .col-1-2 {
+      -webkit-box-flex: 0 1 50%;
+      -moz-box-flex: 0 1 50%;
+      -webkit-flex: 0 1 50%;
+      -ms-flex: 0 1 50%;
+      flex: 0 1 50%; }
+  .flexbox-sm-row-reverse {
+    -webkit-flex-direction: row-reverse;
+    /* Safari 6.1+ */
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; } }
+
+footer {
+  color: #9b8579; }
+  @media only screen and (max-width: 47.9375em) {
+    footer .footer-logo {
+      padding-top: 20px;
+      padding-bottom: 0px;
+      height: 35px;
+      display: inline-block; }
+    footer .address {
+      padding-top: 40px;
+      padding-bottom: 0px; }
+    footer .phone {
+      padding-top: 35px;
+      padding-bottom: 0px; }
+    footer .social {
+      padding-top: 40px;
+      padding-bottom: 0px;
+      font-size: 1.75em; }
+      footer .social i {
+        margin-left: 10px;
+        margin-right: 10px; }
+    footer .legal {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-variant-caps: all-petite-caps; }
+      footer .legal .terms,
+      footer .legal .privacy {
+        text-decoration: underline; } }
+
 /***************************
 Bg-Image Modules
 ***************************/
@@ -524,7 +589,13 @@ Header
       .header-primary:after {
         content: "";
         display: table;
-        clear: both; } }
+        clear: both; }
+      .header-primary .container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex; } }
 
 /***************************
 Hero Modules
@@ -575,7 +646,7 @@ Logo Modules
     .logo-primary {
       width: auto;
       height: 50px;
-      float: left; } }
+      margin-right: auto; } }
 
 .logo-primary img {
   height: 100%; }
@@ -610,9 +681,6 @@ Nav Modules
   margin-top: 28px; }
   @media only screen and (min-width: 48em) {
     .nav-primary {
-      float: right;
-      width: 60%;
-      text-align: right;
       margin-top: 0px; }
       .nav-primary li {
         display: inline-block; } }
@@ -649,12 +717,17 @@ Theme Styles
     width: 100%; }
   @media only screen and (min-width: 48em) {
     .frame-primary {
-      width: 355px;
-      height: 355px;
-      border-radius: 177.5px;
+      width: 230px;
+      height: 230px;
+      border-radius: 115px;
       position: relative;
       top: -30px;
       margin: 0 auto 63px auto; } }
+  @media only screen and (min-width: 62em) {
+    .frame-primary {
+      width: 355px;
+      height: 355px;
+      border-radius: 177.5px; } }
 
 .mask {
   position: relative; }
